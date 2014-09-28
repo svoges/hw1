@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  #get '/about', to: 'CONTROLLER#FUNCTION'
-  #get '/user/new', to: 'CONTROLLER#FUNCTION'
+  get '/about', to: 'static_pages#about'
+  get '/user/new', to: 'users#new', as: 'users'
+  root 'users#index'
   get '/user/:id', to: 'users#show', as: 'user'
   post '/user/new', to: 'users#create'
 end
