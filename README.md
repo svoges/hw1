@@ -156,7 +156,7 @@ end
 
 **Removing years_old and adding Age:**
 
-Currently in our user table to keep the age of our user we have a column years old.  Let's say we determine that we are lazy and years_old is a terrible name for a column and we want to name the column age instead.  We have not put our rails app online and
+Currently in our user table to keep track of the age of our user we have a column years old.  Let's say we determine that we are lazy and years_old is a terrible name for a column and we want to name the column age instead.  We have not put our rails app online and
 since we only have test data it is cool to delete the years_old column and add the age column.  TO REMOVE A COLUMN WE DO NOT WANT TO EDIT OUR MIGRATION FILES.  We should rather run another migration that will tell our database to delete the column.  Since
 rails is nice and has all these magical powers we can easily generate a migration by typing the command:
 
